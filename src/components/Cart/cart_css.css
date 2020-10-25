@@ -1,0 +1,38 @@
+.product {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+  }
+
+  .line {
+      background-color:transparent;
+  }
+
+  .line:hover {
+      background-color: rgb(228, 228, 228);
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Vidaloka');
+.yourcart{
+    font-family: Vidaloka, serif;
+    text-align: start;
+    padding-top: 45px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+.subtotal {
+    margin-left: 950px;
+}
+
+@media (max-width: 880px) {
+    .subtotal {
+      margin-left: 15px;
+      font-size: 14px;
+    }
+}

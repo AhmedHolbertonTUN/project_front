@@ -1,0 +1,38 @@
+.submitButton3 {
+    background-color: #0474dd;
+    height: 38px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 0px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .submitButton3:hover {
+    background-color: #004b92;
+  }
+
+  .quantity  {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 4px solid rgb(75, 75, 75);
+    border-radius: 4px;
+  }
+
+  .success2 {
+    height: 35px;
+    width:180px;
+    display: flex;
+    background-color: green;
+    margin-bottom: 10px;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 8px;
+  }

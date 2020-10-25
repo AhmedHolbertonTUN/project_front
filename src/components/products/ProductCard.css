@@ -1,0 +1,100 @@
+.cardP {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 270px;
+  height: auto;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.cardP button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.cardP button:hover {
+  opacity: 0.7;
+}
+
+.ProductContainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+}
+
+.cardPRD {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s linear;
+}
+
+.CATimg {
+  transition: all 0.2s linear;
+}
+
+.cardPRD-content {
+  position: absolute;
+  bottom: 3rem;
+  right: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.671);
+  transition: all 0.2s linear;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cardPRD-category {
+  font-size: 18px;
+  padding-top: 15px;
+  line-height: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+}
+
+i {
+  margin-left: 5px;
+}
+
+.cardPRD:hover {
+  box-shadow: 0 0px 28px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cardPRD:hover .cardPRD-content {
+  right: 0;
+}
+
+.cardPRD:hover img {
+  transform: scale(1.1);
+}

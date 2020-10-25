@@ -1,0 +1,111 @@
+* {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about {
+  display: -webkit-box;
+  background-color: rgb(235, 235, 235);
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding-top: 45px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cantata+One');
+.title {
+  font-family: 'Cantata One', serif;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dekko');
+.paragraph {
+  font-family: Dekko, cursive;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  width: 1020px;
+  color: rgb(0, 0, 0);
+  /*text-shadow: rgb(0, 0, 0) 2px 2px 2px;*/
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+.par2 {
+  font-family: Cabin, serif;
+  line-height: 28px;
+  padding-left: 55px;
+  width: 72%;
+  padding-right: 35px;
+  text-align: left;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+.par1 {
+  font-family: 'Old Standard TT', serif;
+  text-align: left;
+  line-height: 0px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  padding-left: 55px;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 880px) {
+  .about {
+    flex-wrap: wrap;
+  }
+  .description {
+    flex-wrap: wrap;
+  }
+}
+
+.myButton {
+  background-color: #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  width: 18%;
+  margin-left: 55px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding: 8px 0px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background-color: #494949;
+}

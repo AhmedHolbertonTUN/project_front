@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+.text1 {
+  font-family: 'Marcellus SC', serif;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(66, 66, 66);
+  text-shadow: rgba(67, 102, 15, 0.44) 2px 2px 2px;
+}
+
+.text2 {
+  font-family: 'Marcellus SC', serif;
+  text-align: center;
+  font-size: 35px;
+  margin-left: 430px;
+  color: rgb(12, 131, 32);
+  text-shadow: rgba(67, 102, 15, 0.44) 2px 2px 2px;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+@media (max-width: 880px) {
+  .text2 {
+    margin-left: 5px;
+  }
+}
