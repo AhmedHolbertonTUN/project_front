@@ -24,7 +24,7 @@ export default function ProductCard(props) {
       <p>{props.text}</p>
       <p>
         {isAuthenticated ? (
-        <AddToCart buttonLabel="Add To Cart" product={props.product} customer={user.email}/>
+        <AddToCart buttonLabel="Add To Cart" product={props.product} customer={user.email} className={'cardP_ADD'}/>
         ):(
         <a onClick={() => loginWithRedirect()}><button>LogIn & Add To Cart</button></a>
         )}

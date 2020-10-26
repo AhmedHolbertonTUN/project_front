@@ -24,8 +24,8 @@ const AddToCart = (props) => {
 
   return (
     <div>
-      <button className='buttonAdd' onClick={toggle}>{buttonLabel}</button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
+      <p className={className} onClick={toggle}><strong>{buttonLabel}</strong></p>
+      <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>ADD TO CART</ModalHeader>
         <ModalBody>
         <form action="http://localhost:8080/api/cart/" method="post">

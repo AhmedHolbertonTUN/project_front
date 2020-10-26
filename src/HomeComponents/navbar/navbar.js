@@ -36,7 +36,7 @@ function Navbar() {
       <div>
         {isAuthenticated ? (<div className='UserInfo'><img src={user.picture} alt={user.name} className='avatar' style={{width:'50px'}} />
         <h2 className='white'>Welcome {user.name} !</h2>
-        <button className="myButtonOut"><Link to={`/mycart/${user.email}`}>My Cart</Link></button>
+        <button className="myButtonOut"><Link to={`/mycart`}>My Cart</Link></button>
         </div>):(<></>)}
       </div>
     </div>

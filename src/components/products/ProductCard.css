@@ -26,6 +26,22 @@
   font-size: 16px;
 }
 
+.cardP_ADD {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.cardP_ADD:hover {
+  opacity: 0.7;
+}
+
 .cardP button:hover {
   opacity: 0.7;
 }
@@ -97,4 +113,12 @@ i {
 
 .cardPRD:hover img {
   transform: scale(1.1);
+}
+
+.spinner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 45px;
+  height: 125px;
+  width: 125px;
 }
