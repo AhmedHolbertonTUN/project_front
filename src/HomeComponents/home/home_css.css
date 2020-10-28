@@ -1,5 +1,6 @@
 .home {
   background-image: url(../images/background.jpg);
+  background-size: cover;
   opacity: 1;
   height: 500px;
   display: -webkit-box;

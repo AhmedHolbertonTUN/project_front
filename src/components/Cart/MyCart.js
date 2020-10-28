@@ -38,7 +38,7 @@ function sum(){
  <div>
  {isAuthenticated ? (<div style={{marginBottom:'45px'}}>
      <h1 className='yourcart'>Your Cart</h1>
-     <p style={{paddingLeft:'25px'}}><strong>{listOfItems.length} items in your cart</strong></p>
+     <p style={{paddingLeft:'25px'}}><strong>{listOfItems.length} item(s) in your cart</strong></p>
      <Table>
        <thead>
          <tr>

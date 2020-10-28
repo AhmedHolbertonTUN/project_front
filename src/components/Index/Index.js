@@ -12,12 +12,14 @@ import Product from '../products/Product';
 import Category from '../category/Category';
 import Profile from '../profile/Profile';
 import MyCart from '../Cart/MyCart';
+import Supplier from '../supplier_area/Supplier';
+import Registration from '../supplier_area/Registration';
 
 export default function Index() {
   const { user, isAuthenticated } = useAuth0();
 
   return (
-    <div>
+    <div style={{ zoom:'90%' }}>
       <Header />
       <Router>
       <Navbar />
@@ -27,9 +29,11 @@ export default function Index() {
       <Route path="/policies"  component={Policies} />
       <Route path="/contact"  component={ContactForm} />
       <Route path="/shop"  component={Product} />
+      <Route path="/supplier_registration"  component={Registration} />
       <Route path="/product/:id"  component={Profile} />
       {isAuthenticated && (<Route path="/mycart" render={() => <MyCart user={user.email} />} />)}
       <Route path="/category" component={Category} />
+      {isAuthenticated && <Route path="/supplier" component={Supplier} />}
       </Switch>
       </Router>
       <Footer />

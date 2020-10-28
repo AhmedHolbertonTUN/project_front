@@ -1,0 +1,220 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  
+  .login-box {
+    position:relative;
+    margin: 5% auto;
+    height:400px;
+    width:900px;
+    background:#fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  }
+  .left-box {
+    position:absolute;
+    margin-top: 0px;
+    background-color: rgb(230, 225, 187);
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    padding:40px;
+    width:500px;
+    height:400px;
+  }
+  h1 {
+    margin:0 0 20px 0;
+    font-weight:700;
+    padding-top: 45px;
+    font-size:22px;
+  }
+  .code_area {
+    display:block;
+    box-sizing:border-box;
+    margin-bottom:20px;
+    background-color: transparent;
+    padding:4px;
+    width:420px;
+    height:32px;
+    border:none;
+    outline:none;
+    border-bottom:1px solid #aaa;
+    font-family:sans-serif;
+    font-weight:400;
+    font-size:15px;
+    transition: 0.2s ease;
+  }
+  .code_button {
+    margin-bottom:28px;
+    width:120px;
+    height:32px;
+    background:#f44336;
+    border:none;
+    border-radius:2px;
+    color:#fff;
+    font-family:sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    transition:0.25s ease;
+    cursor:pointer;
+  }
+  .code_button:hover {
+    background:#ff5722;
+    transition: 0.2s ease;
+  }
+  .right-box {
+    position:absolute;
+    top:0;
+    right:0;
+    box-sizing:border-box;
+    padding:40px;
+    padding-top: 95px;
+    width:400px;
+    height:400px;
+    background-image:url(http://www.psdgraphics.com/file/colorful-triangles-background.jpg);
+    background-size:cover;
+    background-position:center;
+  }
+  .or {
+    position:absolute;
+    top:180px;
+    left:480px;
+    width:40px;
+    height:40px;
+    background:#efefef;
+    border-radius:50%;
+    box-shadow: 0 2px 4px rgba( 0,0,0,0.6);
+    line-height:40px;
+    text-align:center;
+  }
+  .right-box .signinwith {
+    display:block;
+    margin-bottom:40px;
+    font-size:28px;
+    color:#fff;
+    text-align:center;
+    text-shadow:0 2px 4px rgba( 0,0,0,0.6);
+  }
+  button.social {
+    margin-bottom:20px;
+    width:220px;
+    height:36px;
+    border:none;
+    border-radius:2px;
+    color:#fff;
+    font-family:sans-serif;
+    font-weight:500;
+    transition: 0.2s ease;
+    cursor:pointer;
+  }
+  .facebook {
+    background:#32508e;
+  }
+
+  @media only screen and (max-width: 880px) {
+    .login-box {
+      zoom : 60%;
+    }
+  }
+
+  .registration_text {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .success {
+    height: 35px;
+    width:260px;
+    display: flex;
+    background-color: green;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 8px;
+  }
+  
+  .label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  .prg {
+    margin-left: 25px;
+    margin-top: 45px;
+    font-size: 18px;
+  }
+
+  .myButton5 {
+    box-shadow:inset 0px 1px 0px 0px #cf866c;
+    background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color:#d0451b;
+    border-radius:3px;
+    border:1px solid #942911;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    margin-left: 985px;
+    font-weight: 700;
+    height: 35px;
+    width: 155px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #854629;
+  }
+  .myButton5:hover {
+    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    background-color:#bc3315;
+  }
+  
+ 
+  .registration_box {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 35px;
+    padding-bottom: 55px;
+    font-size: 15px;
+    width: 80%;
+    margin-left: 25px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    font-weight: 900;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75 {
+      width: 100%;
+      margin-top: 0;
+    }
+    .myButton5 {
+      margin-left: -15px;
+    }
+  }

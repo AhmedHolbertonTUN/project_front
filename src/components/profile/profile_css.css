@@ -1,14 +1,15 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  zoom: 100%;
 }
 
 .cardPF {
   display: flex;
   flex-direction: row;
   height: auto;
-  width: auto;
-  margin-left: 25px;
+  width: 1800px;
+  margin-left: 225px;
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -16,7 +17,7 @@
 
 .product-left {
   height: 100%;
-  width: 450px;
+  width: 550px;
   padding: 4rem 2rem;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -28,17 +29,18 @@
 
 .product-right {
   height: auto;
-  width: 60%;
+  width: 900px;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  background: #333;
+  background: transparent;
   color: #fff;
 }
 
 .product-right img {
   height: 100%;
+  width: 60%;
 }
 
 .header5 h1 {
@@ -133,5 +135,7 @@
 @media (max-width: 880px) {
   .cardPF {
     flex-wrap: wrap;
+    margin-left: 15px;
+    width: auto;
   }
 }

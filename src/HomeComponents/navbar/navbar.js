@@ -27,6 +27,9 @@ function Navbar() {
         <NavLink activeClassName='current' to="/policies">
           <li>Store Policies</li>
           </NavLink>
+          {isAuthenticated && <NavLink activeClassName='current' to="/supplier">
+          <li>Supplier Area</li>
+          </NavLink>}
           {isAuthenticated ? (<a className='login' onClick={() => logout()}>
           <li>Log Out</li>
         </a>):(<a className='login' onClick={() => loginWithRedirect()}>
