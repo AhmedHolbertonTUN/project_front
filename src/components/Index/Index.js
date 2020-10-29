@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../HomeComponents/header/header';
+import Dashboard from '../Dashboard/Dashboard';
 import Navbar from '../../HomeComponents/navbar/navbar';
 import Footer from '../../HomeComponents/footer/footer';
 import HomePage from '../home_page/Home';
@@ -14,6 +15,8 @@ import Profile from '../profile/Profile';
 import MyCart from '../Cart/MyCart';
 import Supplier from '../supplier_area/Supplier';
 import Registration from '../supplier_area/Registration';
+import Account from '../Dashboard/account/Account';
+import SupplierProducts from '../Dashboard/supplierProducts/SupplierProducts';
 
 export default function Index() {
   const { user, isAuthenticated } = useAuth0();
@@ -34,6 +37,9 @@ export default function Index() {
       {isAuthenticated && (<Route path="/mycart" render={() => <MyCart user={user.email} />} />)}
       <Route path="/category" component={Category} />
       {isAuthenticated && <Route path="/supplier" component={Supplier} />}
+      {isAuthenticated && <Route path="/dashboard/:id" component={Dashboard} />}
+      {isAuthenticated && <Route path="/myaccount/:id" component={Account} />}
+      {isAuthenticated && <Route path="/supplier_products/:id" component={SupplierProducts} />}
       </Switch>
       </Router>
       <Footer />

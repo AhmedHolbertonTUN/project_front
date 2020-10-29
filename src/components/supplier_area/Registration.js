@@ -67,9 +67,23 @@ function Registration() {
   <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
 </svg><p style={{paddingLeft:'10px'}}>Successfully Registered !</p></div>)}
         <h1 className='prg'>Step 2 : Organic Certification and Accreditation</h1>
-        <h5 className='prg'>To complete your registration please send us your "Organic Certification and Accreditation" on our email: <strong>support@biomarket.com</strong></h5>
+        <h5 className='prg'>To complete your registration please send us your "Organic Certification and Accreditation" by <a className='formlink'
+      href="javascript:void(
+        window.open(
+          'https://form.jotform.com/203013997979066',
+          'blank',
+          'scrollbars=yes,
+          toolbar=no,
+          width=700,
+          height=500'
+        )
+      )
+    ">
+      Clicking Here
+    </a></h5>
         <h5 className='prg'>After the approval we send you a supplier code, this code allows you to publish your products.</h5>
         <Link to='/' ><Button className='prg' color="primary">Back to Home</Button>{' '}</Link>
+        
         </div>
     )
 }
