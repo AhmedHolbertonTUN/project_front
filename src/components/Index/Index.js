@@ -17,6 +17,7 @@ import Supplier from '../supplier_area/Supplier';
 import Registration from '../supplier_area/Registration';
 import Account from '../Dashboard/account/Account';
 import SupplierProducts from '../Dashboard/supplierProducts/SupplierProducts';
+import SortByCategory from '../SortByCategory/SortByCategory';
 
 export default function Index() {
   const { user, isAuthenticated } = useAuth0();
@@ -34,6 +35,7 @@ export default function Index() {
       <Route path="/shop"  component={Product} />
       <Route path="/supplier_registration"  component={Registration} />
       <Route path="/product/:id"  component={Profile} />
+      <Route path="/category/:category"  component={SortByCategory} />
       {isAuthenticated && (<Route path="/mycart" render={() => <MyCart user={user.email} />} />)}
       <Route path="/category" component={Category} />
       {isAuthenticated && <Route path="/supplier" component={Supplier} />}

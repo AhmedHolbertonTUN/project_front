@@ -36,12 +36,13 @@
   font-size: 16px;
 }
 
-.success {
+.success1 {
   height: 35px;
   width:360px;
   display: flex;
   background-color: green;
   margin-bottom: 10px;
+  padding-top: 4px;
   text-align: center;
   color: antiquewhite;
   font-size: 15px;

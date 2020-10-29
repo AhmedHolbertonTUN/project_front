@@ -1,6 +1,7 @@
 .App {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 30px;
   }
   
   @import url("https://fonts.googleapis.com/css2?family=Grandstander&display=swap");
@@ -13,12 +14,20 @@
 
 
   .container22 {
-    height: 100vh;
+    height: 100%;
   }
   .side-nav,
   .nav-menu {
     height: 100%;
   }
+
+  .addprd {
+    width: 800px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bold;
+  }
+
   .side-nav .nav-menu {
     list-style: none;
     padding: 40px 0;
@@ -58,5 +67,112 @@
     width: 20px;
     border-top-right-radius: 25px;
     box-shadow: 0 -20px 0 0 #fff;
+  }
+  
+
+  @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+  /* Pen Design Only */
+  
+  
+  
+  /* Start */
+  .news_hor {
+    font-family: Barlow;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    max-width: 678px;
+    zoom: 90%;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    box-shadow: 0 0 6px rgba(5, 112, 126, 0.87);
+  }
+  
+  .news_hor img {
+    width: 265px;
+    float: left;
+    position: relative;
+    height: 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding-right: 30px;
+    z-index: 1;
+  }
+  .news_hor:hover img,
+  .news_hor.hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .App2 {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+    height: 25%;
+    
+  }
+
+  .figcaption {
+    padding: 5%;
+    padding-bottom: 73px;
+    width: 90%;
+    background-color: #ffffff;
+  }
+  
+  .news_hor h3 {
+    font-family: "Cabin";
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 3px 0;
+  }
+  
+  .new_footer {
+    border-top: 1px solid rgba(5, 112, 126, 0.479);
+    padding: 0 20px;
+    font-size: 13px;
+    line-height: 50px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .hor_date {
+    float: left;
+    margin-left: 370px;
+    color: rgb(0, 69, 158);
+    display: flex;
+  }
+  
+  .news_hor a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  @media (max-width: 880px) {
+    .App2 {
+      flex-direction: column;
+    }
+    .news_hor {
+      flex-direction: column;
+    }
+    .hor_date {
+      float: left;
+      margin-left: 20px;
+    }
   }
   

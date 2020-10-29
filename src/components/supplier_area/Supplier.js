@@ -14,8 +14,8 @@ function Supplier() {
           <p> Enter your supplier code to access your dashborad </p>
           <form action="">
           <input className='code_area' type="text" onInput={(e) => setID(e.target.value)}  placeholder="Supplier Code.." required/>
+          <button onClick={()=>{if (ID) history.push(`/dashboard/${ID}`)}} className='code_button'>ENTER</button>
           </form>
-          <button onClick={()=>{history.push(`/dashboard/${ID}`)}} className='code_button'>ENTER</button>
         </div>
         <div className="right-box">
           <span className="signinwith">Become a Supplier </span>

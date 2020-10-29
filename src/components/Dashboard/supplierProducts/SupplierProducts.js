@@ -1,13 +1,35 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useAuth0 } from '@auth0/auth0-react';
 import { useParams, useHistory } from 'react-router-dom';
 import './supl_prod_css.css'
+import { Spinner } from 'reactstrap';
+import axios from "axios";
+import ProductCard from './ProductCard';
+import AddProduct from '../CRUD_Supplier/AddProduct';
 
 function SupplierProducts() {
     const { logout } = useAuth0();
 
     let { id } = useParams();
     let history=useHistory();
+    let url1 =`http://localhost:8080/api/supplier/${id}`;
+
+    const [Name, setName] = useState();
+    const [isLoading, setisLoading] = useState(true);
+    const [listOfProducts, setlistOfProducts] = useState([]);
+
+    useEffect(() => {
+    axios.get(url1).then((res) => {
+        console.log(res);
+        setName(res.data.name);
+        setTimeout(axios.get(`http://localhost:8080/api/products/supplier/${res.data.name.replace(/\s/g, '%20')}`).then((res) => {
+          setlistOfProducts(res.data)
+          setisLoading(false);
+      })
+          
+      , 300);
+    });
+}, [Name]);
 
     return (
         <div className='App'>
@@ -36,7 +58,15 @@ function SupplierProducts() {
   </div>
 </div>
 </div>
-        </div>
+{isLoading ? (<div className='spinner'><Spinner type="grow" color="secondary" /><Spinner type="grow" color="secondary" /><Spinner type="grow" color="secondary" /></div>): (
+  <div className='App2'>
+    <div className='addprd'>
+      <AddProduct supplier={Name} />
+      </div>
+  {listOfProducts.map(el => <ProductCard image={el.image} name={el.name} category={el.category} price={el.price} product={el} />)}
+  </div>
+)}
+</div>
     )
 }
 
